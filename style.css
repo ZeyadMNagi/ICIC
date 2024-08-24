@@ -1,0 +1,156 @@
+/* constant */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Braille";
+  font-style: normal;
+  font-weight: 400;
+  src: url(./font/BrailleAoe-mMa.ttf) format("truetype");
+}
+
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #222;
+
+}
+
+.icic,
+.headline {
+  font-family: "Playfair Display", serif;
+  font-size: 35px;
+}
+
+.headline {
+  font-size: 45px;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  z-index: 10;
+  justify-content: center;
+}
+
+nav {
+  width: 90%;
+  padding: 10px;
+  margin: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333438a6;
+  border-radius: 35px;
+  a {
+    padding: 15px;
+    margin-left: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    color: #fefefe;
+  }
+}
+
+.lin {
+  position: relative;
+  z-index: 4;
+}
+
+.logo:hover,
+.others a:hover {
+  transform: scale(1.1);
+  letter-spacing: 2px;
+}
+
+section {
+  padding: 200px 150px;
+}
+
+#home {
+  background: url(./img/hero.jpg) no-repeat center 20%,
+    linear-gradient(to right, rgba(0, 0, 0, 0.5) 30%, #0e4070cf 80%);
+  background-size: cover;
+  background-blend-mode: overlay;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: #fefefe;
+  h2 {
+    font-size: 4.5em;
+  }
+  .braille {
+    font-family: "Braille";
+  }
+}
+
+#about {
+  color: #fefefe;
+  .text {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    p {
+      text-align: justify;
+      line-height: 32px;
+    }
+  }
+}
+
+#info {
+  border-radius: 25px;
+  background: #1a1919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fefefe;
+
+  p {
+    text-align: justify;
+    padding: 15px;
+    line-height: 25px;
+    &::first-letter {
+      font-size: 25px;
+    }
+  }
+  img {
+    width: 250px;
+  }
+}
+
+#hypothesis {
+  color: #fefefe;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .text {
+    display: flex;
+  }
+  .p {
+    width: 50%;
+    text-align: justify;
+    padding: 15px;
+    line-height: 25px;
+    &::first-letter {
+      font-size: 25px;
+    }
+    h3::first-letter {
+      text-transform: uppercase;
+    }
+  }
+  img {
+    width: 100%;
+    border-radius: 15px;
+  }
+}
