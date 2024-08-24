@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./img/ICIC.jpg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <h2 class="logo icic"><a href="./index.html">ICIC</a></h2>
+          <h3 class="others">
+            <a class="lin" href="./index.html#about">about us</a>
+            <a class="lin" href="./info.html">Information</a>
+            <a class="lin" href="./contact.html">contact Us</a>
+          </h3>
+        </nav>
+      </header>
+      <section id="contact">
+        <form id="contact-form">
+          <h2 class="headline con-t">Send Us a message</h2>
+          <input type="hidden" name="contact_number" />
+          <label>Name</label>
+          <input id="name" type="text" placeholder="name" name="user_name" />
+          <label>Email</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="email"
+            name="user_email"
+          />
+          <label>Message</label><br />
+          <textarea
+            id="message"
+            placeholder="message"
+            name="message"
+          ></textarea>
+          <input id="submit" type="submit" value="Send" />
+        </form>
+        <div class="p">
+          <img src="./img/ICIC.png" alt="ICIC" />
+          <h3>
+            If you want to contact us do not hesitate
+            <br /><br /><a href="icic2egypt@gmail.com">icic2egypt@gmail.com</a>
+          </h3>
+        </div>
+      </section>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "L37i1-IXaivM00Th4",
+        });
+      })();
+    </script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            emailjs.sendForm("ICIC_101", "contact_form", this).then(
+              () => {
+                console.log("SUCCESS!");
+                window.location.href = "index.html"
+              },
+              (error) => {
+                console.log("FAILED...", error);
+              }
+            );
+          });
+      };
+    </script>
+  </body>
+</html>
