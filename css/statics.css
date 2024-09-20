@@ -1,0 +1,48 @@
+#statics {
+  color: #fefefe;
+  background: #1a1919;
+  border-radius: 25px 25px 0 0;
+  text-align: center;
+  p {
+    text-align: justify;
+    padding: 15px;
+    line-height: 25px;
+    &::first-letter {
+      font-size: 25px;
+      text-transform: uppercase;
+    }
+  }
+  .ss {
+    display: flex;
+    width: 100%;
+    .card {
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-items: center;
+      img {
+        width: 50px;
+        padding: 5px;
+      }
+      .ratio {
+        display: flex;
+        align-items: center;
+        font-size: xx-large;
+      }
+    }
+  }
+  .graph {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .p {
+      width: 45%;
+      img {
+        width: 100%;
+        min-height: 300px;
+      }
+    }
+  }
+}

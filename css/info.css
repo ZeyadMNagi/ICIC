@@ -1,0 +1,40 @@
+#info {
+  border-radius: 0 0 25px 25px;
+  background: url(../img/Info.png) #1a1919 no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fefefe;
+  .text {
+    background: #222c;
+    padding: 15px;
+    border-radius: 12px;
+    margin: 10px;
+  }
+  p {
+    text-align: justify;
+    padding: 15px;
+    line-height: 25px;
+    &::first-letter {
+      font-size: 25px;
+    }
+  }
+  .img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      text-align: center;
+      padding: 0;
+      &::first-letter {
+        font-size: unset;
+      }
+    }
+  }
+  img {
+    height: 260px;
+    margin: 12px;
+  }
+}

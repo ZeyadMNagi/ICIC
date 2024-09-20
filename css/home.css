@@ -1,0 +1,31 @@
+#home {
+  background: url(../img/hero.jpg) no-repeat center 20%,
+    linear-gradient(to right, rgba(0, 0, 0, 0.5) 30%, #0e4070cf 80%);
+  background-size: cover;
+  background-blend-mode: overlay;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: #fefefe;
+  h2 {
+    font-size: 4.5em;
+  }
+  .braille {
+    font-family: "Braille";
+  }
+}
+
+#about {
+  color: #fefefe;
+  .text {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    p {
+      text-align: justify;
+      line-height: 32px;
+    }
+  }
+}

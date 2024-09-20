@@ -16,8 +16,13 @@
       <header>
         <nav>
           <h2 class="logo icic"><a href="./index.html">ICIC</a></h2>
-          <h3 class="others">
-            <a class="lin" href="./index.html#about">about us</a>
+          <div class="hamburger-menu" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <h3 class="others" id="nav-links">
+            <a class="lin" href="./index.html#Project">The Project</a>
             <a class="lin" href="./info.html">Information</a>
             <a class="lin" href="./contact.html">contact Us</a>
           </h3>
@@ -74,7 +79,7 @@
             emailjs.sendForm("ICIC_101", "contact_form", this).then(
               () => {
                 console.log("SUCCESS!");
-                window.location.href = "index.html"
+                window.location.href = "index.html";
               },
               (error) => {
                 console.log("FAILED...", error);
@@ -83,5 +88,6 @@
           });
       };
     </script>
+    <script src="./nav.js"></script>
   </body>
 </html>

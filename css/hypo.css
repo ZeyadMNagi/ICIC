@@ -1,0 +1,26 @@
+#hypothesis {
+  color: #fefefe;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .text {
+    display: flex;
+  }
+  .p {
+    width: 50%;
+    text-align: justify;
+    padding: 15px;
+    line-height: 25px;
+    &::first-letter {
+      font-size: 25px;
+    }
+    h3::first-letter {
+      text-transform: uppercase;
+    }
+  }
+  img {
+    width: 100%;
+    border-radius: 15px;
+  }
+}
