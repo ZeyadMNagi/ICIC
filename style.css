@@ -14,7 +14,7 @@
   border-radius: 25px;
   .stage {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     padding: 30px;
     .text {
