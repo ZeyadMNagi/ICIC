@@ -57,3 +57,24 @@
   border-radius: 0 !important;
   padding: 100px 150px !important;
 }
+
+.pro-title {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.pro-subtitle {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2563eb;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.pro br {
+  display: block;
+  margin-bottom: 0.5rem;
+}
